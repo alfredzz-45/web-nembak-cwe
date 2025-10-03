@@ -70,11 +70,11 @@ function katajudul(){
 }
 function katakata(){
 	  new TypeIt("#kalimatakhir", {
-      strings: ["" + tekskalimatakhir], startDelay: 50, speed: 48, cursor: true,
+      strings: ["" + tekskalimatakhir], startDelay: 40, speed: 38, cursor: true,
       afterComplete: function(){
       	kalimatakhir.innerHTML = tekskalimatakhir;
           judulakhir.style="opacity:0;transform:scale(0);";
-          setTimeout(teksmuncul,350);
+          setTimeout(teksmuncul,250);
           setInterval(berjatuhan,200);
           setTimeout(kataakhir,1000);
       },}).go();
